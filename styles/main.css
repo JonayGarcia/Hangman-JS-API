@@ -1,0 +1,144 @@
+
+:root {
+    --primary-color: #c3d449;
+    --secondary-color: white;
+}
+
+body {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.header__title {
+    margin-bottom: 4px;
+}
+
+.header__subtitle {
+    margin-top: 4px;
+}
+
+.game__category {
+    margin-top: 40px;
+}
+
+.game__category #category {
+    border-bottom: 1px solid white;
+}
+
+button {
+    color: black;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game__alphabet {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr); 
+    row-gap: 8px;
+    justify-items: center;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game__alphabet button {
+    padding: 8px;
+    width: 32px;
+}
+
+button.disabled {
+    background: #dddddd;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+button.disabled:hover {
+    cursor: default;
+}
+
+#game__word {
+    display: flex;
+    justify-content: center;
+}
+
+.character {
+    margin: 8px;
+    width: 14px;
+}
+
+.game__image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 8px;
+    border: 1px dashed var(--secondary-color);
+}
+
+#game__resume p {
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#image {
+    width: 203px;
+    height: 200px;
+}
+
+.game__buttons {
+    padding: 16px;
+}
+
+.game__buttons button {
+    padding: 12px 16px;
+    width: 200px;
+}
+
+.game__message-win {
+    color: green;
+    text-shadow:-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.game__message-lose {
+    color: red;
+    text-shadow:-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.game__solution {
+    font-size: 20px;
+}
+
+.solution {
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
